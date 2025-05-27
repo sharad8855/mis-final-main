@@ -615,17 +615,21 @@ async def chat(message: ChatMessage):
             # Create response object with consistent structure
             profiles = []
             for profile in json_data.get('profiles', [])[:1]:  # Limit to 1 profile
-                profiles.append(ProfileDetails(
-                    name=profile.get('name'),
-                    designation=profile.get('designation'),
-                    contact_number=profile.get('contact_number'),
-                    specialization=profile.get('specialization'),
-                    rating=profile.get('rating'),
-                    location=profile.get('location'),
-                    appointment=profile.get('appointment', False),
-                    task=profile.get('task', False),
-                    job=profile.get('job', False)
-                ))
+                profile_data = {
+                    'name': profile.get('name'),
+                    'designation': profile.get('designation'),
+                    'contact_number': profile.get('contact_number'),
+                    'specialization': profile.get('specialization'),
+                    'location': profile.get('location'),
+                    'appointment': profile.get('appointment', False),
+                    'task': profile.get('task', False),
+                    'job': profile.get('job', False)
+                }
+                # Only include rating if not a job-related profile
+                if not profile.get('job', False):
+                    profile_data['rating'] = profile.get('rating')
+                
+                profiles.append(ProfileDetails(**profile_data))
             
             return ChatResponse(
                 response=response_text,
