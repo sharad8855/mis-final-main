@@ -5,6 +5,7 @@ from config import GEMINI_API_KEY
 from typing import Dict, List, Optional
 from datetime import datetime
 from fastapi.middleware.cors import CORSMiddleware
+import json
 
 app = FastAPI(title="Digital Parbhani Chat API")
 
@@ -86,6 +87,18 @@ class ChatResponse(BaseModel):
     response: str
     profiles: Optional[List[ProfileDetails]] = None
     user_id: str
+
+class JobListing(BaseModel):
+    position: str
+    company: str
+    salary: str
+    qualification: str
+    location: str
+    contact: str
+    timing: str
+
+class JobResponse(BaseModel):
+    jobs: List[JobListing]
 
 def get_conversation_context(user_id: str) -> str:
     if user_id not in conversation_history:
@@ -570,7 +583,6 @@ async def chat(message: ChatMessage):
             
             # Extract and parse JSON
             json_str = response_text[json_start:json_end]
-            import json
             json_data = json.loads(json_str)
             
             # Remove JSON and any markdown formatting from response text
@@ -629,6 +641,49 @@ async def chat(message: ChatMessage):
                 user_id=message.user_id
             )
 
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/jobs", response_model=JobResponse)
+async def get_jobs():
+    try:
+        # Read profiles data
+        profiles_data = read_profiles()
+        
+        # Create a prompt for Gemini to extract job listings
+        prompt = f"""Extract all job listings from the following data and format them as a JSON array. 
+        Each job should have these exact fields: position, company, salary, qualification, location, contact, timing.
+        Only include jobs from the "Job Listings in Selu Region" section.
+        Format the response as a valid JSON array of job objects.
+        Return ONLY the JSON array, no other text.
+        
+        Data:
+        {profiles_data}
+        """
+        
+        # Get response from Gemini
+        response = model.generate_content(prompt)
+        response_text = response.text
+        
+        # Extract JSON from response
+        try:
+            # Find JSON in the response
+            json_start = response_text.find('[')
+            json_end = response_text.rfind(']') + 1
+            if json_start >= 0 and json_end > json_start:
+                json_str = response_text[json_start:json_end]
+                jobs_data = json.loads(json_str)
+                
+                # Convert to JobListing objects
+                jobs = [JobListing(**job) for job in jobs_data]
+                
+                return JobResponse(jobs=jobs)
+            else:
+                raise HTTPException(status_code=500, detail="No valid job listings found in response")
+                
+        except json.JSONDecodeError as e:
+            raise HTTPException(status_code=500, detail=f"Error parsing job listings: {str(e)}")
+            
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
