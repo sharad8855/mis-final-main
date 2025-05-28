@@ -81,7 +81,8 @@ class ProfileDetails(BaseModel):
     location: Optional[str] = None
     appointment: Optional[bool] = False
     task: Optional[bool] = False
-    job: Optional[bool] = False  # New parameter for job-related queries
+    job: Optional[bool] = False
+    target_id: Optional[str] = None
 
 class ChatResponse(BaseModel):
     response: str
@@ -205,28 +206,29 @@ async def chat(message: ChatMessage):
            - Simple for everyone
 
         Profile Rules:
-        1. ALWAYS show ONLY ONE profile:
+        1. ALWAYS include target_id in profile responses
+        2. ALWAYS show ONLY ONE profile:
            - Most relevant to user's need
            - Highest rated in area
            - Closest to user's location
            - Best match for service
-        2. NEVER show multiple profiles
-        3. Choose profile based on:
+        3. NEVER show multiple profiles
+        4. Choose profile based on:
            - User's specific need
            - Location proximity
            - Service quality
            - User's preference
-        4. For officials:
+        5. For officials:
            - Show only the specific official asked for
            - Never show deputies unless asked
            - Never show multiple officials
-        5. ALWAYS show profile immediately when:
+        6. ALWAYS show profile immediately when:
            - User mentions any official
            - User mentions any service
            - User mentions any professional
            - User asks about meeting someone
 
-        6. For job queries:
+        7. For job queries:
            - When user asks about jobs, ALWAYS provide job details in this format:
              * Job Title
              * Company/Organization Name
@@ -276,6 +278,7 @@ async def chat(message: ChatMessage):
            - appointment: boolean (REQUIRED, true if user needs to meet this person)
            - task: boolean (REQUIRED, true if user needs service from this person)
            - job: boolean (REQUIRED, true ONLY for job-related queries)
+           - target_id: string (REQUIRED, must match the target_id from profiles.txt)
 
         2. Response Fields (MUST use these exact field names and values):
            - profiles: array of profile objects (ONLY ONE profile)
@@ -423,7 +426,8 @@ async def chat(message: ChatMessage):
                     "location": "Selu",
                     "appointment": true,
                     "task": false,
-                    "job": false
+                    "job": false,
+                    "target_id": "Dr. Anjali Deshmukh"
                 }}
             ]
         }}
@@ -443,7 +447,8 @@ async def chat(message: ChatMessage):
                     "location": "Selu",
                     "appointment": true,
                     "task": false,
-                    "job": false
+                    "job": false,
+                    "target_id": "Dr. Anjali Deshmukh"
                 }}
             ]
         }}
@@ -463,7 +468,8 @@ async def chat(message: ChatMessage):
                     "location": "Selu",
                     "appointment": true,
                     "task": true,
-                    "job": false
+                    "job": false,
+                    "target_id": "Rajesh Patil"
                 }}
             ]
         }}
@@ -483,7 +489,8 @@ async def chat(message: ChatMessage):
                     "location": "Selu",
                     "appointment": true,
                     "task": true,
-                    "job": false
+                    "job": false,
+                    "target_id": "Rajesh Patil"
                 }}
             ]
         }}
@@ -623,11 +630,24 @@ async def chat(message: ChatMessage):
                     'location': profile.get('location'),
                     'appointment': profile.get('appointment', False),
                     'task': profile.get('task', False),
-                    'job': profile.get('job', False)
+                    'job': profile.get('job', False),
+                    'target_id': profile.get('target_id')  # Ensure target_id is included
                 }
                 # Only include rating if not a job-related profile
                 if not profile.get('job', False):
                     profile_data['rating'] = profile.get('rating')
+                
+                # Extract target_id from profiles.txt if not present in response
+                if not profile_data['target_id']:
+                    # Search for matching profile in PROFILES_DATA
+                    profile_lines = PROFILES_DATA.split('\n')
+                    for i, line in enumerate(profile_lines):
+                        if profile_data['name'] in line:
+                            # Look for target_id in next few lines
+                            for j in range(i, min(i + 5, len(profile_lines))):
+                                if 'target_id:' in profile_lines[j]:
+                                    profile_data['target_id'] = profile_lines[j].split('target_id:')[1].strip()
+                                    break
                 
                 profiles.append(ProfileDetails(**profile_data))
             

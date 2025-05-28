@@ -1,5 +1,6 @@
 🏛️ Top Maharashtra Government Officials (10 Profiles)
 1. Devendra Fadnavis
+target_id: CM001
 Designation: Chief Minister of Maharashtra
 Party: Bharatiya Janata Party (BJP)
 Location: Mumbai
@@ -9,6 +10,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 2. Eknath Shinde
+target_id: DCM001
 Designation: Deputy Chief Minister of Maharashtra
 Party: Shiv Sena (Shinde faction)
 Location: Mumbai
@@ -18,6 +20,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 3. Ajit Pawar
+target_id: DCM002
 Designation: Deputy Chief Minister of Maharashtra
 Party: Nationalist Congress Party (NCP - Ajit Pawar faction)
 Location: Mumbai
@@ -27,6 +30,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 4. Chandrakant Patil
+target_id: CM002
 Designation: Cabinet Minister
 Party: Bharatiya Janata Party (BJP)
 Location: Mumbai
@@ -36,6 +40,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 5. Pankaja Munde
+target_id: CM003
 Designation: Cabinet Minister
 Party: Bharatiya Janata Party (BJP)
 Location: Mumbai
@@ -45,6 +50,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 6. Ashish Shelar
+target_id: CM004
 Designation: Cabinet Minister
 Party: Bharatiya Janata Party (BJP)
 Location: Mumbai
@@ -54,6 +60,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 7. Dadaji Bhuse
+target_id: CM005
 Designation: Cabinet Minister
 Party: Shiv Sena (Shinde faction)
 Location: Mumbai
@@ -63,6 +70,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 8. Manikrao Kokate
+target_id: CM006
 Designation: Cabinet Minister
 Party: Shiv Sena (Shinde faction)
 Location: Mumbai
@@ -72,6 +80,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 9. Pratap Sarnaik
+target_id: CM007
 Designation: Cabinet Minister
 Party: Shiv Sena (Shinde faction)
 Location: Mumbai
@@ -81,6 +90,7 @@ Availability: By official channels only
 Note: Direct appointments not available. Please contact through official channels.
 
 10. Uday Samant
+target_id: CM008
 Designation: Cabinet Minister
 Party: Shiv Sena (Shinde faction)
 Location: Mumbai
@@ -91,6 +101,7 @@ Note: Direct appointments not available. Please contact through official channel
 
 🏛️ Government Services (10 Profiles)
 1. Meghana Deepak Sakore-Bordikar
+target_id: MLA001
 Designation: MLA, Jintur Constituency
 Party: BJP
 Contact Number: 9967438887
@@ -99,6 +110,7 @@ Address: Nayan Swapn Niwas, Old Pedgaon Road, Vaibhav Nagar, Parbhani - 431401
 Availability: Mon, Wed, Fri | 10 AM - 1 PM
 
 2. Rajesh Sarvade
+target_id: f1cbf098-14f0-4fca-9930-1ad8f950866c
 Designation: Tahsildar, Jintur
 Contact: 02457-220110
 Email: taahsiljintur@rediffmail.com
@@ -106,313 +118,363 @@ Availability: Mon–Sat | 10 AM - 5 PM
 
 3. Income Tax Officer - Parbhani Circle
 Name: Vinod Sawant
+target_id: ITO001
 Contact: 0257-2233221
 Availability: Mon–Fri | 10 AM - 4 PM
 
 4. RTO Officer (Road Issue Support)
 Name: Ramesh Pawar
+target_id: RTO001
 Contact: 02452-221100
 Availability: Mon–Sat | 9 AM - 5 PM
 
 5. Talathi Office - Land Related Support
 Officer: Neha Jagtap
+target_id: TAL001
 Contact: 9876541234
 Availability: Mon–Sat | 10 AM - 3 PM
 
 6. Parbhani District Collector Office
 Name: Dr. Mahendra Kalyankar
+target_id: DC001
 Contact: 02452-220501
 Availability: Mon–Fri | 11 AM - 5 PM
 
 7. Zilla Parishad Officer
 Name: Ujjwala Toke
+target_id: ZP001
 Contact: 02452-221122
 Availability: Mon–Fri | 9 AM - 6 PM
 
 8. Gram Sevak - Jintur
 Name: Santosh Kale
+target_id: GS001
 Contact: 9922334455
 Availability: Mon–Sat | 10 AM - 3 PM
 
 9. Municipal Officer - Jintur
 Name: Kalpesh Thorat
+target_id: MO001
 Contact: 9876512345
 Availability: Mon–Sat | 9 AM - 5 PM
 
 10. Block Development Officer (BDO)
 Name: Aarti Patil
+target_id: BDO001
 Contact: 9765432189
 Availability: Mon–Fri | 10 AM - 4 PM
 
 🏥 Health & Emergency (10 Profiles)
 1. Dr. Anjali Deshmukh (General Physician)
+target_id: DOC001
 Contact: 9876543210
 Availability: Mon, Tue, Thu, Sat | 9 AM - 5 PM
 
 2. Dr. Rajesh Kulkarni (Pathologist)
+target_id: DOC002
 Contact: 9876543211
 Availability: Mon–Sat | 8 AM - 2 PM
 
 3. Apollo Diagnostics, Parbhani
+target_id: LAB001
 Service: Blood Test & Pathology
 Contact: 9833441122
 Availability: Daily | 7 AM - 7 PM
 
 4. Emergency Ambulance (108)
+target_id: AMB001
 Contact: 108 Toll-Free
 Availability: 24/7
 
 5. Parbhani Civil Hospital
+target_id: HOS001
 Service: Emergency, ICU, General Ward
 Contact: 02452-220100
 Availability: 24/7
 
 6. MedPlus Jintur (Pharmacy)
+target_id: PHM001
 Contact: 9822113344
 Availability: Daily | 8 AM - 10 PM
 
 7. First Aid Centre - Jintur Bus Stand
+target_id: FAC001
 Contact: 9887755221
 Availability: Mon–Sat | 10 AM - 6 PM
 
 8. Dr. Leena Thombre (Pediatrician)
+target_id: DOC003
 Contact: 9745567788
 Availability: Mon–Sat | 11 AM - 5 PM
 
 9. Mental Health Counsellor - Dr. Alka Sawant
+target_id: DOC004
 Contact: 9811223344
 Availability: Mon–Fri | 10 AM - 4 PM
 
 10. Rural Health Worker (Asha)
 Name: Seema Gaikwad
+target_id: RHW001
 Contact: 9955667722
 Availability: Mon–Sat | 8 AM - 2 PM
 
 🌾 Agriculture Services & Schemes (10 Profiles)
 1. Krishi Sevak
 Name: Dattatray More
+target_id: KS001
 Contact: 9777744444
 Availability: Mon–Sat | 9 AM - 4 PM
 
 2. Agriculture Officer
 Name: Rutuja Pawar
+target_id: AO001
 Contact: 9766655555
 Availability: Mon–Fri | 10 AM - 4 PM
 
 3. PM-KISAN Samman Nidhi
+target_id: PMK001
 Benefit: ₹6000/year
 Apply: pmkisan.gov.in
 
 4. KUSUM Solar Yojana
+target_id: KUS001
 Benefit: 60% subsidy on solar pumps
 Contact: Local Krushi Office
 
 5. Soil Testing Centre - Jintur
+target_id: STC001
 Contact: 9822441133
 Availability: Mon–Sat | 9 AM - 1 PM
 
 6. NABARD Scheme
+target_id: NAB001
 Support: Farm loans & equipment
 Contact: nabard.org
 
 7. Weather Info Kendra
+target_id: WIK001
 Contact: 9898989898
 Availability: Daily | 7 AM - 7 PM
 
 8. Agri Equipment Rental - Jintur
+target_id: AER001
 Contact: 9700991122
 Availability: Mon–Sat | 10 AM - 5 PM
 
 9. FPO (Farmer Producer Org.) - Jintur
 Name: Jai Kisan FPO
+target_id: FPO001
 Contact: 9856332211
 
 10. Drip Irrigation Dealer
 Name: GreenTech
+target_id: DID001
 Contact: 9090909090
 Availability: Mon–Sat | 10 AM - 6 PM
 
 🛠️ Utilities & Local Services (10 Profiles)
 1. Electrician
 Name: Manoj Chaure
+target_id: ELEC001
 Contact: 9867888999
 Availability: Daily | 10 AM - 7 PM
 
 2. Electrician
 Name: Aakash Bhise
+target_id: ELEC002
 Contact: 9844433322
 Availability: Mon–Sat | 9 AM - 6 PM
 
 3. Building Contractor
 Name: Vishal Construction
+target_id: BC001
 Contact: 9898982323
 Availability: Mon–Fri | 10 AM - 5 PM
 
 4. Road Contractor
 Name: Sagar Buildcon
+target_id: RC001
 Contact: 9922112211
 Availability: Mon–Sat | 11 AM - 6 PM
 
 5. Land Surveyor (Mojani)
 Name: Nikhil Ingle
+target_id: LS001
 Contact: 9766884433
 Availability: Mon–Sat | 10 AM - 4 PM
 
 6. Plumber
 Name: Vijay Tamboli
+target_id: PLB001
 Contact: 9877665522
 Availability: Mon–Sat | 9 AM - 5 PM
 
 7. Furniture Carpenter
 Name: Rohit More
+target_id: CARP001
 Contact: 9855544433
 Availability: Mon–Fri | 10 AM - 5 PM
 
 8. Pest Control Services
 Name: PestAway Jintur
+target_id: PCS001
 Contact: 9923456677
 Availability: Mon–Sat | 9 AM - 6 PM
 
 9. Painter
 Name: Shubham Zalte
+target_id: PAINT001
 Contact: 9900112233
 Availability: Mon–Sat | 10 AM - 6 PM
 
 10. Water Tank Cleaner
 Name: Ajay Pandey
+target_id: WTC001
 Contact: 9754432211
 Availability: Mon–Fri | 9 AM - 5 PM
 
 Job Listings in Selu Region:
 
 1. Parivar Kirana
-   - Position: Store Manager
-   - Salary: ₹10,000/month
-   - Qualification: B.Com
-   - Location: Main Bazaar Road, Selu
-   - Contact: 9156237812
-   - Timing: 10 AM – 9 PM
-   - Experience: 2years
+target_id: JOB001
+Position: Store Manager
+Salary: ₹10,000/month
+Qualification: B.Com
+Location: Main Bazaar Road, Selu
+Contact: 9156237812
+Timing: 10 AM – 9 PM
+Experience: 2years
 
 2. Annapurna Medical Stores
-   - Position: Medical Sales Assistant
-   - Salary: ₹8,500/month
-   - Qualification: 12th Pass, basic medicine knowledge
-   - Location: Gandhi Chowk, Selu
-   - Contact: 9827345601
-   - Timing: 9 AM – 8 PM
-   - Experience: 2years
-
+target_id: JOB002
+Position: Medical Sales Assistant
+Salary: ₹8,500/month
+Qualification: 12th Pass, basic medicine knowledge
+Location: Gandhi Chowk, Selu
+Contact: 9827345601
+Timing: 9 AM – 8 PM
+Experience: 2years
 
 3. MS AgriTech Services
-   - Position: Field Executive
-   - Salary: ₹12,000 + Travel Allowance
-   - Qualification: B.Sc Agriculture
-   - Location: Near ST Stand, Selu
-   - Contact: 9012367485
-   - Timing: 10 AM – 6 PM
-   - Experience: 2years
+target_id: JOB003
+Position: Field Executive
+Salary: ₹12,000 + Travel Allowance
+Qualification: B.Sc Agriculture
+Location: Near ST Stand, Selu
+Contact: 9012367485
+Timing: 10 AM – 6 PM
+Experience: 2years
 
 4. Morya Computers & Xerox
-   - Position: Computer Operator
-   - Salary: ₹7,500/month
-   - Qualification: MS-CIT / Typing Speed 30+
-   - Location: Opp. Nagar Parishad, Selu
-   - Contact: 9763451289
-   - Timing: 9:30 AM – 8 PM
-   - Experience: 2years
+target_id: JOB004
+Position: Computer Operator
+Salary: ₹7,500/month
+Qualification: MS-CIT / Typing Speed 30+
+Location: Opp. Nagar Parishad, Selu
+Contact: 9763451289
+Timing: 9:30 AM – 8 PM
+Experience: 2years
 
 5. Sai Construction Services
-   - Position: Site Supervisor
-   - Salary: ₹13,000/month
-   - Qualification: Civil Diploma
-   - Location: Selu outskirts (project-based)
-   - Contact: 8145723090
-   - Timing: 8 AM – 6 PM
-   - Experience: 2years
+target_id: JOB005
+Position: Site Supervisor
+Salary: ₹13,000/month
+Qualification: Civil Diploma
+Location: Selu outskirts (project-based)
+Contact: 8145723090
+Timing: 8 AM – 6 PM
+Experience: 2years
 
 6. Aaditya Tutorials
-   - Position: Maths & Science Tutor (8th–10th Std)
-   - Salary: ₹10,000/month
-   - Qualification: B.Sc / M.Sc
-   - Location: Shivaji Nagar, Selu
-   - Contact: 8837465123
-   - Timing: 4 PM – 8 PM
-   - Experience: 2years
+target_id: JOB006
+Position: Maths & Science Tutor (8th–10th Std)
+Salary: ₹10,000/month
+Qualification: B.Sc / M.Sc
+Location: Shivaji Nagar, Selu
+Contact: 8837465123
+Timing: 4 PM – 8 PM
+Experience: 2years
 
 7. Hotel Shivraj Family Restaurant
-   - Position: Waiter & Billing Staff
-   - Salary: ₹9,000/month + Free Meals
-   - Qualification: 10th Pass
-   - Location: Highway Side, Selu
-   - Contact: 8971234560
-   - Timing: Rotational Shifts
-   - Experience: 2years
+target_id: JOB007
+Position: Waiter & Billing Staff
+Salary: ₹9,000/month + Free Meals
+Qualification: 10th Pass
+Location: Highway Side, Selu
+Contact: 8971234560
+Timing: Rotational Shifts
+Experience: 2years
 
 8. Kiran Electronics
-   - Position: Mobile Repair Technician
-   - Salary: ₹11,000/month
-   - Qualification: ITI Electronics or 1 Year Experience
-   - Location: Jawahar Nagar, Selu
-   - Contact: 9358741209
-   - Timing: 10:30 AM – 7 PM
-   - Experience: 2years
+target_id: JOB008
+Position: Mobile Repair Technician
+Salary: ₹11,000/month
+Qualification: ITI Electronics or 1 Year Experience
+Location: Jawahar Nagar, Selu
+Contact: 9358741209
+Timing: 10:30 AM – 7 PM
+Experience: 2years
 
 9. Kalpana Beauty Salon
-   - Position: Beautician
-   - Salary: ₹9,500/month
-   - Qualification: Beautician Course Certificate
-   - Location: Near Bus Stand, Selu
-   - Contact: 9201378546
-   - Timing: 11 AM – 8 PM
-   - Experience: 2years
+target_id: JOB009
+Position: Beautician
+Salary: ₹9,500/month
+Qualification: Beautician Course Certificate
+Location: Near Bus Stand, Selu
+Contact: 9201378546
+Timing: 11 AM – 8 PM
+Experience: 2years
 
 10. Shree Gajanan Transport
-    - Position: Driver (LMV & Goods Vehicle)
-    - Salary: ₹14,000/month + Bonus
-    - Qualification: 10th Pass + Valid Driving License
-    - Location: Transport Nagar, Selu
-    - Contact: 8890321574
-    - Timing: Shift Based
-    - Experience: 2years
+target_id: JOB010
+Position: Driver (LMV & Goods Vehicle)
+Salary: ₹14,000/month + Bonus
+Qualification: 10th Pass + Valid Driving License
+Location: Transport Nagar, Selu
+Contact: 8890321574
+Timing: Shift Based
+Experience: 2years
 
 Clothing Shops in Selu:
 
 1. Vidarbha Textile
-   - Location: Near Bus Stand, Selu
-   - Speciality: Modi Style Clothes
-   - Products:
-     * Traditional Wear
-     * Modern Fashion
-     * Party Wear
-     * Daily Wear
-   - Contact: 9765432101
-   - Timing: 10 AM - 9 PM
-   - Distance: 0.2 km from Bus Stand
+target_id: SHOP001
+Location: Near Bus Stand, Selu
+Speciality: Modi Style Clothes
+Products:
+* Traditional Wear
+* Modern Fashion
+* Party Wear
+* Daily Wear
+Contact: 9765432101
+Timing: 10 AM - 9 PM
+Distance: 0.2 km from Bus Stand
 
 2. Fashion Hub
-   - Location: Main Market Road, Selu
-   - Speciality: Latest Trends
-   - Products:
-     * Western Wear
-     * Traditional Collection
-     * Kids Wear
-     * Accessories
-   - Contact: 9765432102
-   - Timing: 9:30 AM - 8:30 PM
-   - Distance: 0.5 km from Bus Stand
+target_id: SHOP002
+Location: Main Market Road, Selu
+Speciality: Latest Trends
+Products:
+* Western Wear
+* Traditional Collection
+* Kids Wear
+* Accessories
+Contact: 9765432102
+Timing: 9:30 AM - 8:30 PM
+Distance: 0.5 km from Bus Stand
 
 3. Style Corner
-   - Location: Gandhi Chowk, Selu
-   - Speciality: Designer Collection
-   - Products:
-     * Designer Wear
-     * Wedding Collection
-     * Casual Wear
-     * Footwear
-   - Contact: 9765432103
-   - Timing: 10 AM - 8 PM
-   - Distance: 0.8 km from Bus Stand 
+target_id: SHOP003
+Location: Gandhi Chowk, Selu
+Speciality: Designer Collection
+Products:
+* Designer Wear
+* Wedding Collection
+* Casual Wear
+* Footwear
+Contact: 9765432103
+Timing: 10 AM - 8 PM
+Distance: 0.8 km from Bus Stand 
 
 
 
